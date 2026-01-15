@@ -23,11 +23,12 @@ body{
 }
 
 .footer-section p {
-    margin: 0.3rem 0;
+    margin: 1rem 0;
     font-size: 0.95rem;
 }
 .ikonky{
-    margin-top: 0.5rem;
+    vertical-align: middle;
+    padding-right: 16px;
 }
 
 .ikonky a {
