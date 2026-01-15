@@ -1,0 +1,36 @@
+@font-face {
+    font-family: "Ziclets";
+    src: url("ziclets_medium_font/Ziclets-Medium.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+.titul {
+    font-family: "Ziclets", sans-serif;
+    color: #4b1a1a;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+.site-footer {
+    background-color: #BF9B78;
+    color: #000;
+    display: flex;
+    justify-content: space-around;
+    padding: 1.5rem;
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.footer-section p {
+    margin: 0.3rem 0;
+    font-size: 0.95rem;
+}
+.ikonky{
+    margin-top: 0.5rem;
+}
+
+.ikonky a {
+    margin: 0 0.5rem; /* medzera medzi ikonami */
+    display: inline-block;
+}
