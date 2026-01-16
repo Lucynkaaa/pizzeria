@@ -12,10 +12,16 @@
 }
 header {
   background-color: #bf9b78;
-  padding: 1rem 2rem;
   display: flex;
+  height: 15vh;
   align-items: center;
   justify-content: space-between;
+}
+header .logo {
+  scale: 0.75;
+  position: absolute;
+  top: 1;
+  left: 5;
 }
 body {
   font-family: "Roboto", sans-serif;
@@ -23,6 +29,20 @@ body {
   padding: 0;
   box-sizing: border-box;
   background-color: #f3eed9;
+}
+nav {
+  width: 100%;
+  display: flex;
+  gap: 2rem;
+  justify-content: space-evenly;
+  align-items: center;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+  font-family: "Ziclets";
+  font-size: 2.2rem;
+  color: #680f13;
 }
 h2 {
   font-size: 2rem;
@@ -44,7 +64,7 @@ p {
   margin: auto;
 }
 #onas {
-  max-width: 85%;
+  max-width: 75%;
   margin-bottom: 2rem;
 }
 #menu {
@@ -65,6 +85,32 @@ p {
   margin-top: 1rem;
 }
 
+#galeria div {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 40% 40%;
+  padding: 10px;
+  gap: 10%;
+}
+#galeria img:nth-child(1) {
+  width: 100%;
+  text-align: center;
+  grid-row: 1 / span 2;
+  margin: auto;
+}
+#galeria img:nth-child(2) {
+  width: 100%;
+  text-align: center;
+  grid-column: 2 / span 1;
+  margin: auto;
+}
+#galeria img:nth-child(3) {
+  width: 100%;
+  text-align: center;
+  grid-column: 2 / span 1;
+  margin: auto;
+}
+
 .site-footer {
   background-color: #bf9b78;
   color: #000;
@@ -75,11 +121,18 @@ p {
   flex-wrap: wrap;
   text-align: center;
 }
+iframe {
+  width: 70%;
+  height: 500px;
+  border: 0;
+  scroll-behavior: auto;
+  margin: 0;
+}
 .contacts {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10rem;
+  gap: 20rem;
   margin-bottom: 1rem;
 }
 .footer-section p {
