@@ -7,7 +7,7 @@
 .titul {
   font-family: "Ziclets";
   color: #680f13;
-  font-size: 2.5rem;
+  font-size: 3rem;
   letter-spacing: 2px;
 }
 header {
@@ -16,6 +16,15 @@ header {
   height: 15vh;
   align-items: center;
   justify-content: space-between;
+  padding: 0 1rem;
+  flex-wrap: wrap;
+}
+@media (max-width: 768px) {
+  header {
+    height: auto;
+    flex-direction: column;
+    gap: 1rem;
+  }
 }
 header .logo {
   scale: 0.75;
@@ -24,25 +33,45 @@ header .logo {
   left: 5;
 }
 body {
+  width: 100%;
   font-family: "Roboto", sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   background-color: #f3eed9;
+  overflow-x: hidden;
 }
 nav {
+  margin-left: 5%;
   width: 100%;
   display: flex;
   gap: 2rem;
   justify-content: space-evenly;
   align-items: center;
 }
+
+@media (max-width: 768px) {
+  nav {
+    margin-left: 0;
+    width: 100%;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
 a {
   text-decoration: none;
   color: inherit;
   font-family: "Ziclets";
   font-size: 2.2rem;
   color: #680f13;
+}
+
+@media (max-width: 768px) {
+  a {
+    font-size: 1.5rem;
+  }
 }
 h2 {
   font-size: 2rem;
@@ -53,7 +82,8 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 2rem;
+  position: relative;
+  overflow: hidden;
 }
 
 p {
@@ -66,31 +96,69 @@ p {
 #onas {
   max-width: 75%;
   margin-bottom: 2rem;
+  position: relative;
+  z-index: 1;
+}
+@media (max-width: 768px) {
+  #onas {
+    max-width: 90%;
+  }
 }
 #menu {
+  opacity: 1;
+  z-index: 2;
+  width: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  max-width: 650px;
-  width: 90%;
-  border: #bc827b 3px solid;
-  min-height: 75vh;
-  background-image: url(../pizza-logo.png);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-blend-mode: overlay;
+  justify-content: center;
+  position: relative;
 }
 #menu .titul {
   text-align: center;
   margin-top: 1rem;
+  opacity: 1;
+  margin-bottom: 0;
+}
+#menu .menu-background {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  max-width: 650px;
+  width: 90%;
+  border: #8b6b5c 3px solid;
+  min-height: 75vh;
+  background-image: url(../pizza-logo.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 400px;
+  background-color: #e8dcc8;
+  padding: 2rem;
+  position: relative;
+  z-index: 2;
 }
 
+@media (max-width: 768px) {
+  #menu .menu-background {
+    min-height: 60vh;
+    max-width: 95%;
+    padding: 1.5rem;
+  }
+}
+#galeria {
+  width: 90%;
+  margin-bottom: 2rem;
+  position: relative;
+  z-index: 1;
+}
 #galeria div {
+  display: flex;
+  justify-content: center;
   width: 100%;
   display: grid;
   grid-template-columns: 40% 40%;
   padding: 10px;
   gap: 10%;
+  z-index: 50;
 }
 #galeria img:nth-child(1) {
   width: 100%;
@@ -111,6 +179,22 @@ p {
   margin: auto;
 }
 
+@media (max-width: 768px) {
+  #galeria div {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+  #galeria img:nth-child(1) {
+    grid-row: auto;
+  }
+  #galeria img:nth-child(2) {
+    grid-column: auto;
+  }
+  #galeria img:nth-child(3) {
+    grid-column: auto;
+  }
+}
+
 .site-footer {
   background-color: #bf9b78;
   color: #000;
@@ -128,12 +212,27 @@ iframe {
   scroll-behavior: auto;
   margin: 0;
 }
+
+@media (max-width: 768px) {
+  iframe {
+    width: 90%;
+    height: 300px;
+  }
+}
+
 .contacts {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 20rem;
   margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+  .contacts {
+    flex-direction: column;
+    gap: 2rem;
+  }
 }
 .footer-section p {
   margin: 1rem 0;
@@ -147,4 +246,59 @@ iframe {
 .ikonky a {
   margin: 0 0.5rem; /* medzera medzi ikonami */
   display: inline-block;
+}
+
+@keyframes fall {
+  from {
+    transform: translateY(-100px) rotate(0deg);
+    opacity: 0.75;
+  }
+  to {
+    transform: translateY(100vh) rotate(360deg);
+    opacity: 0.75;
+  }
+}
+
+.falling-logos {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  scale: 1.8;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.falling-logo {
+  position: absolute;
+  opacity: 0.25;
+  animation: fall linear infinite;
+  animation-duration: var(--duration, 8s);
+  animation-delay: var(--delay, 0s);
+}
+
+@media (max-width: 768px) {
+  .falling-logo {
+    width: 40px;
+    height: 40px;
+  }
+
+  @keyframes fall {
+    from {
+      transform: translateY(-80px) rotate(0deg);
+      opacity: 1;
+    }
+    to {
+      transform: translateY(600px) rotate(360deg);
+      opacity: 0;
+    }
+  }
+}
+
+@media (max-width: 870px) {
+  /*treba burger menu už v tejto šírke*/
+  nav {
+  }
 }

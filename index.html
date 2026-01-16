@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="sk">
   <head>
     <meta charset="UTF-8" />
@@ -17,6 +17,7 @@
       type="text/javascript"></script>
     <link rel="stylesheet" href="style/style.css" />
     <link rel="icon" type="image/x-icon" href="pizza_logo.png" />
+    <script src="script.js"></script>
   </head>
   <body>
     <header>
@@ -34,6 +35,7 @@
       </nav>
     </header>
     <main>
+      <div class="falling-logos"></div>
       <section id="onas">
         <h2 class="titul">O nás</h2>
         <p>
@@ -42,7 +44,7 @@
           programovania a vytvorili miesto, kde má každá pizza svoj vlastný
           syntax error len v názve – chuť je vždy bezchybná.
         </p>
-        <br>
+        <br />
         <p>
           Naše pizze nesú mená inšpirované programátorskými pojmami, funkciami a
           legendárnymi bugmi, pretože veríme, že jedlo môže byť rovnako
@@ -50,12 +52,12 @@
           špecialitu, každá pizza je postavená na kvalitných surovinách,
           poctivom ceste a dokonale vyladených kombináciách chutí.
         </p>
-        <br>
+        <br />
         <p>
           V Pizza Tokoš platí jednoduché pravidlo:žiadne polotovary, žiadne bugy
           v chuti, len stabilná verzia pizze.
         </p>
-        <br>
+        <br />
         <p>
           Sme miestom, kde sa stretávajú developeri, študenti, geekovia aj
           milovníci dobrej pizze. Príď si oddýchnuť, debugnuť hlad a nasadiť
@@ -64,12 +66,8 @@
       </section>
 
       <section id="menu">
-        <h2 class="titul">MENU</h2>
-
-        <p> Bude sa ťahať z databazy</p>
-
-          <h3 class="titul">Špeciál</h3>
-          <p> Bude sa ťahať z databazy </p>
+        <div class="menu-background">
+          <h2 class="titul">MENU</h2>
         </div>
       </section>
 
@@ -77,15 +75,9 @@
         <h2 class="titul">Galéria</h2>
 
         <div>
-          <img
-            src="o3.jpg"
-            alt="obr1" />
-          <img
-            src="o2.jpg"
-            alt="obr2" />
-          <img
-            src="o1.jpg"
-            alt="obr3" />
+          <img src="o3.jpg" alt="obr1" />
+          <img src="o2.jpg" alt="obr2" />
+          <img src="o1.jpg" alt="obr3" />
         </div>
       </section>
     </main>
@@ -97,7 +89,8 @@
         <section id="map">
           <div class="map-container">
             <div style="width: 100%">
-              <iframe src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Ko%C5%A1ice%20Ostrovsk%C3%A9ho%201+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+              <iframe
+                src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Ko%C5%A1ice%20Ostrovsk%C3%A9ho%201+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
                 <a
                   href="https://www.mapsdirections.info/de/evolkerung-auf-einer-karte-berechnen/"
                   >Kartentool Bevölkerung</a
