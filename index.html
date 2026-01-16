@@ -1,128 +1,158 @@
 <!DOCTYPE html>
 <html lang="sk">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pizza Tokos</title>
-    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'><!--Roboto som dal-->
-    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&display=swap" rel="stylesheet"><!--Atkinson som dal-->
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/x-icon" href="pizza_logo.png">
-</head>
-<body>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet" />
+    <!--Roboto som dal-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&display=swap"
+      rel="stylesheet" />
+    <!--Atkinson som dal-->
+    <script
+      src="https://c.webfontfree.com/c.js?f=ZicletsW00"
+      type="text/javascript"></script>
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="icon" type="image/x-icon" href="pizza_logo.png" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="#" target="_top"
+          ><img src="pizza-logo.png" alt="pizza_logo" style="width: 3em"
+        /></a>
+      </div>
 
-
-<header>
-    <div class="logo"><a href="#"target="_top"><img src="pizza_logo.png" alt="pizza_logo" style="width: 3em">Pizza Tokos</a></div>
-
-    <nav>
+      <nav>
         <a href="#onas">O nás</a>
         <a href="#menu">Menu</a>
         <a href="#galeria">Galéria</a>
         <a href="#kontakt">Kontakt</a>
-    </nav>
-</header>
+      </nav>
+    </header>
+    <main>
+      <section id="onas">
+        <h2 class="titul">O nás</h2>
+        <p>
+          Pizza Tokoš je pizzeria pre všetkých, ktorí milujú dobrú pizzu rovnako
+          ako čistý kód. Spojili sme vášeň pre taliansku pizzu so svetom
+          programovania a vytvorili miesto, kde má každá pizza svoj vlastný
+          syntax error len v názve – chuť je vždy bezchybná.
+        </p>
+        <p>
+          Naše pizze nesú mená inšpirované programátorskými pojmami, funkciami a
+          legendárnymi bugmi, pretože veríme, že jedlo môže byť rovnako
+          kreatívne ako kód. Či už si dáš klasiku alebo „refaktorovanú“
+          špecialitu, každá pizza je postavená na kvalitných surovinách,
+          poctivom ceste a dokonale vyladených kombináciách chutí.
+        </p>
+        <p>
+          V Pizza Tokoš platí jednoduché pravidlo:žiadne polotovary, žiadne bugy
+          v chuti, len stabilná verzia pizze.
+        </p>
+        <p>
+          Sme miestom, kde sa stretávajú developeri, študenti, geekovia aj
+          milovníci dobrej pizze. Príď si oddýchnuť, debugnuť hlad a nasadiť
+          najnovšiu verziu spokojnosti
+        </p>
+      </section>
 
+      <section id="menu">
+        <h2 class="titul">MENU</h2>
 
-<section id="onas">
-    <h2 class="titul">O nás</h2>
-    <p>Pizza Tokoš je pizzeria pre všetkých,
-         ktorí milujú dobrú pizzu rovnako ako čistý kód.
-          Spojili sme vášeň pre taliansku pizzu so svetom
-           programovania a vytvorili miesto, kde má každá
-            pizza svoj vlastný syntax error len v názve –
-             chuť je vždy bezchybná.</p>
-<p>Naše pizze nesú mená inšpirované programátorskými pojmami,
- funkciami a legendárnymi bugmi, pretože veríme, že jedlo
-  môže byť rovnako kreatívne ako kód. Či už si dáš klasiku
-   alebo „refaktorovanú“ špecialitu, každá pizza je postavená
-    na kvalitných surovinách, poctivom ceste a dokonale vyladených
-     kombináciách chutí.</p>
-<p>
-V Pizza Tokoš platí jednoduché pravidlo:žiadne polotovary,
- žiadne bugy v chuti, len stabilná verzia pizze.</p>
-<p>
-Sme miestom, kde sa stretávajú developeri, študenti, geekovia aj
-milovníci dobrej pizze. Príď si oddýchnuť, debugnuť hlad a nasadiť
- najnovšiu verziu spokojnosti</p>
-</section>
+        <p> Bude sa ťahať z databazy</p>
 
+          <h3 class="titul">Špeciál</h3>
+          <p> Bude sa ťahať z databazy </p>
+        </div>
+      </section>
 
-<section id="menu">
-    <h2 class="titul">MENU</h2>
+      <section id="galeria">
+        <h2 class="titul">Galéria</h2>
 
-    <div>
-        <ul>
-            <li>Python <span>CENA: $12</span><br><small>{hadie_kusky, špenát, mozzarella, pesto}</small></li>
-            <li>Java <span>CENA: $14</span><br><small>{BBQ_káva, feferónky, tmavý_syr}</small></li>
-            <li>JavaScript <span>CENA: $13</span><br><small>{šunka, kukurica, paprika}</small></li>
-            <li>PHP <span>CENA: $11</span><br><small>{slanina, cibuľa, sýrový_bonus}</small></li>
-            <li>Laravel <span>CENA: $15</span><br><small>{slzy_cloveka, kuracie_mäso, šampióny}</small></li>
-            <li>C++ <span>CENA: $16</span><br><small>{saláma, slanina, káva}</small></li>
-            <li>HTML & CSS <span>CENA: $12</span><br><small>{šunka, kukurica, mozzarella}</small></li>
-            <li>SQL <span>CENA: $13</span><br><small>{tuniak, cibuľa, kukurica}</small></li>
-            <li>React <span>CENA: $14</span><br><small>{kuracie_mäso, brokolica, syrovka}</small></li>
-        </ul>
+        <div
+          style="
+            display: grid;
+            grid-template-columns: 40% 40%;
+            padding: 10px;
+            gap: 10%;
+          ">
+          <img
+            src="o3.jpg"
+            style="
+              width: 100%;
+              text-align: center;
+              grid-row: 1 / span 2;
+              margin: auto;
+            "
+            alt="obr1" />
+          <img
+            src="o2.jpg"
+            style="
+              width: 100%;
+              text-align: center;
+              grid-column: 2 / span 1;
+              margin: auto;
+            "
+            alt="obr2" />
+          <img
+            src="o1.jpg"
+            style="
+              width: 100%;
+              text-align: center;
+              grid-column: 2 / span 1;
+              margin: auto;
+            "
+            alt="obr3" />
+        </div>
+      </section>
+    </main>
 
-        <h3 class="titul">Špeciál</h3>
-        <p>Tokoš Formaggi – <span>CENA: $17</span><br>
-        <small>{mozzarella, gorgonzola, parmezán, pecorino}</small></p>
-    </div>
-</section>
-
-
-
-
-<section id="galeria">
-    <h2 class="titul">Galéria</h2>
-
-    <div style= "display: grid; grid-template-columns: 40% 40%; padding: 10px; gap: 10%;">
-        <img src="o3.jpg" style="width: 100%; text-align: center; grid-row: 1 / span 2; margin: auto;" alt="obr1">
-        <img src="o2.jpg" style="width: 100%; text-align: center; grid-column: 2 / span 1; margin: auto;" alt="obr2">
-        <img src="o1.jpg" style="width: 100%; text-align: center; grid-column: 2 / span 1; margin: auto;" alt="obr3">
-    </div>
-</section>
-
-
-<section id="kontakt">
-    <h2 class="titul">Kontakt</h2>
+    <footer class="site-footer">
+      <section id="kontakt">
+        <h2 class="titul">Kontakt</h2>
 
         <section id="map">
-    <h2 class="titul">GOOGLE MAPY</h2>
-    <div class="map-container">
-        <div    style="width: 100%"><iframe
-                width="50%"
+          <div class="map-container">
+            <div style="width: 100%">
+              <iframe
+                width="70%"
                 height="500"
                 frameborder="0"
                 scrolling="no"
                 marginheight="0"
                 marginwidth="0"
                 src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Ko%C5%A1ice%20Ostrovsk%C3%A9ho%201+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
-                <a href="https://www.mapsdirections.info/de/evolkerung-auf-einer-karte-berechnen/">Kartentool Bevölkerung</a></iframe></div>
-    </div>
-</section>
+                <a
+                  href="https://www.mapsdirections.info/de/evolkerung-auf-einer-karte-berechnen/"
+                  >Kartentool Bevölkerung</a
+                ></iframe
+              >
+            </div>
+          </div>
+        </section>
+      </section>
 
-
-</section>
-
-
-<footer class="site-footer">
-    <div class="footer-section">
-        <p>Ostrovskeho 1, Košice 041 01</p>
-        <p>TEL: +421 676 945 2846</p>
-        <p>picatokos@ostrovskeho.com</p>
-    </div>
-    <div class="footer-section">
-        <p>
-            <img src="FB.svg" alt="Facebook" class="ikonky">
-            real_tokospica (nie č)</p>
-        <p>
-            <img src="IG.svg" alt="Instagram" class="ikonky">
-            real_tokospica (nie č)</p>
-        
-    </div>
-</footer>
-
-</body>
+      <div class="contacts">
+        <div class="footer-section">
+          <p>Ostrovskeho 1, Košice 041 01</p>
+          <p>TEL: +421 676 945 2846</p>
+          <p>picatokos@ostrovskeho.com</p>
+        </div>
+        <div class="footer-section">
+          <p>
+            <img src="FB.svg" alt="Facebook" class="ikonky" />
+            real_tokospica (nie č)
+          </p>
+          <p>
+            <img src="IG.svg" alt="Instagram" class="ikonky" />
+            real_tokospica (nie č)
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
-
