@@ -35,7 +35,7 @@ header {
   grid-template-columns: auto 1fr auto;
   align-items: center;
   padding: 0.75rem 1rem;
-  min-height: 72px;
+  max-height: 15vh;
   position: relative;
   z-index: 20;
 }
@@ -43,6 +43,7 @@ header {
 header .logo {
   display: flex;
   align-items: center;
+  scale: 0.75;
 }
 
 body {
