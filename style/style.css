@@ -179,9 +179,10 @@ p {
   color: #333;
   margin: 0;
 }
+/*
 #onas {
-  /* sizing handled by main > section */
-}
+  /* sizing handled by main > section *//*
+}*/
 #menu {
   opacity: 1;
   z-index: 2;
@@ -197,7 +198,7 @@ p {
   opacity: 1;
   margin-bottom: 0;
 }
-#menu .menu-background {
+#menu .menu-background{
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -272,7 +273,7 @@ p {
   width: 100%;
   max-width: 600px;
   padding: 2rem;
-  text-align: center;
+  text-align: left;
   margin-top: 2rem;
 }
 
@@ -407,7 +408,17 @@ iframe {
   gap: 1rem;
   margin-bottom: 1rem;
   width: 100%;
+
+  /* Typografia toho footeru */
+  font-family: 'Atkinson Hyperlegible', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 32px;
+  line-height: 1;
+  letter-spacing: 0;
+  vertical-align: middle;
 }
+
 
 @media (max-width: 768px) {
   .contacts {
@@ -415,9 +426,26 @@ iframe {
     gap: 2rem;
   }
 }
+
+.site-footer {
+    background-color: #BF9B78;
+    color: #000;
+    display: flex;
+    justify-content: space-around;
+    padding: 1.5rem;
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
 .footer-section p {
   margin: 1rem 0;
   font-size: 0.95rem;
+
+  font-family: Roboto;
+  font-weight: 600;
+  font-style: SemiBold;
+
 }
 .ikonky {
   vertical-align: middle;
@@ -477,9 +505,9 @@ iframe {
     }
   }
 }
-
+/*
 @media (max-width: 870px) {
-  /*treba burger menu už v tejto šírke*/
+  /*treba burger menu už v tejto šírke*//*
   nav {
   }
-}
+}*/
