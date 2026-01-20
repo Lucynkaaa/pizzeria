@@ -78,8 +78,8 @@ nav a {
 
   nav {
     display: none;
-    position: absolute;
-    top: 100%;
+    position: fixed;
+    top: 0;
     left: 0;
     right: 0;
     width: 100%;
@@ -90,11 +90,15 @@ nav a {
     border-top: 2px solid rgba(0, 0, 0, 0.12);
     z-index: 19;
     pointer-events: none;
+    max-height: 0;
+    overflow: visible;
+    transition: max-height 0.3s ease;
   }
 
   nav.active {
     display: flex;
-    pointer-events: all;
+    pointer-events: auto;
+    max-height: 100vh;
   }
 
   nav a {

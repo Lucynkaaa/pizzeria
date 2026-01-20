@@ -2,13 +2,14 @@
 document.addEventListener("DOMContentLoaded", () => {
   const burgerBtn = document.getElementById("burgerBtn");
   const navMenu = document.getElementById("navMenu");
+  const header = document.querySelector("header");
 
   if (burgerBtn && navMenu) {
     const setExpanded = (isOpen) => {
       burgerBtn.setAttribute("aria-expanded", String(isOpen));
       burgerBtn.setAttribute(
         "aria-label",
-        isOpen ? "Close navigation" : "Open navigation"
+        isOpen ? "Close navigation" : "Open navigation",
       );
     };
 
@@ -16,6 +17,8 @@ document.addEventListener("DOMContentLoaded", () => {
       burgerBtn.classList.remove("active");
       navMenu.classList.remove("active");
       setExpanded(false);
+      // Restore scrolling
+      document.body.style.overflow = "";
     };
 
     const toggleMenu = () => {
@@ -23,6 +26,14 @@ document.addEventListener("DOMContentLoaded", () => {
       burgerBtn.classList.toggle("active", willOpen);
       navMenu.classList.toggle("active", willOpen);
       setExpanded(willOpen);
+      // Allow scrolling on body when menu is open
+      document.body.style.overflow = willOpen ? "visible" : "";
+
+      // Position nav below header
+      if (willOpen && header) {
+        const headerHeight = header.offsetHeight;
+        navMenu.style.top = headerHeight + "px";
+      }
     };
 
     burgerBtn.addEventListener("click", toggleMenu);
