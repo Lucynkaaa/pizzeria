@@ -172,6 +172,11 @@ main {
   background-position: center;
   background-repeat: no-repeat;
 }
+@media (max-width: 870px) {
+  main {
+    background-attachment: scroll;
+  }
+}
 
 /* Keep section titles and text aligned to the same left edge */
 main > section:not(#menu) {
