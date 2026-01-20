@@ -370,6 +370,12 @@ p {
   font-family: "Atkinson Hyperlegible", sans-serif;
 }
 
+.footer-section a {
+  text-decoration: none;
+  color: inherit;
+  font-family: "Atkinson Hyperlegible", sans-serif;
+}
+
 #kontakt {
   width: min(1000px, 90%);
   display: flex;
@@ -445,7 +451,7 @@ iframe {
   text-align: center;
 }
 
-.footer-section p {
+.footer-section a {
   margin: 1rem 0;
   font-size: 0.95rem;
 
