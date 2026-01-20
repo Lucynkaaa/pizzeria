@@ -166,6 +166,11 @@ main {
   overflow: hidden;
   width: 100%;
   padding-top: 1.25rem;
+  background-image: url(../pozadie.svg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 /* Keep section titles and text aligned to the same left edge */
@@ -183,10 +188,7 @@ p {
   color: #333;
   margin: 0;
 }
-/*
-#onas {
-  /* sizing handled by main > section */ /*
-}*/
+
 #menu {
   opacity: 1;
   z-index: 2;
@@ -204,13 +206,13 @@ p {
 }
 #menu .menu-background {
   display: flex;
+  background-color: #f3eed9;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
   width: min(650px, 90%);
   border: var(--border) 3px solid;
   min-height: clamp(520px, 75vh, 820px);
-  background-color: rgba(255, 255, 255, 0.62);
   padding: 2rem;
   position: relative;
   z-index: 2;
@@ -460,58 +462,3 @@ iframe {
   margin: 0 0.5rem; /* medzera medzi ikonami */
   display: inline-block;
 }
-
-@keyframes fall {
-  from {
-    transform: translateY(-100px) rotate(0deg);
-    opacity: 0.75;
-  }
-  to {
-    transform: translateY(100vh) rotate(360deg);
-    opacity: 0.75;
-  }
-}
-
-.falling-logos {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  scale: 1.8;
-  pointer-events: none;
-  overflow: hidden;
-  z-index: 0;
-}
-
-.falling-logo {
-  position: absolute;
-  opacity: 0.25;
-  animation: fall linear infinite;
-  animation-duration: var(--duration, 8s);
-  animation-delay: var(--delay, 0s);
-}
-
-@media (max-width: 768px) {
-  .falling-logo {
-    width: 40px;
-    height: 40px;
-  }
-
-  @keyframes fall {
-    from {
-      transform: translateY(-80px) rotate(0deg);
-      opacity: 1;
-    }
-    to {
-      transform: translateY(600px) rotate(360deg);
-      opacity: 0;
-    }
-  }
-}
-/*
-@media (max-width: 870px) {
-  /*treba burger menu už v tejto šírke*/ /*
-  nav {
-  }
-}*/
