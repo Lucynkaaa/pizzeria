@@ -1,8 +1,53 @@
+// Load pizza menu from JSON
+async function loadPizzaMenu() {
+  try {
+    const response = await fetch("pizza-data.json");
+    const data = await response.json();
+    const menuItemsDiv = document.querySelector(".menu-items");
+    const specialMenuDiv = document.querySelector(".menu-special .menu-item");
+
+    if (menuItemsDiv && data.pizze) {
+      // Separate special pizza (id 10) from regular pizzas
+      const regularPizzas = data.pizze.filter((pizza) => pizza.id !== 10);
+      const specialPizza = data.pizze.find((pizza) => pizza.id === 10);
+
+      // Display regular pizzas
+      menuItemsDiv.innerHTML = regularPizzas
+        .map(
+          (pizza) => `
+        <div class="pizza-card">
+          <h3>${pizza.nazov}</h3>
+          <p class="popis">${pizza.popis}</p>
+          <p class="cena">€${pizza.cena.toFixed(2)}</p>
+        </div>
+      `,
+        )
+        .join("");
+
+      // Display special pizza
+      if (specialPizza && specialMenuDiv) {
+        specialMenuDiv.innerHTML = `
+        <div class="pizza-card special">
+          <h3>${specialPizza.nazov}</h3>
+          <p class="popis">${specialPizza.popis}</p>
+          <p class="cena">€${specialPizza.cena.toFixed(2)}</p>
+        </div>
+      `;
+      }
+    }
+  } catch (error) {
+    console.error("Error loading pizza menu:", error);
+  }
+}
+
 // Burger menu functionality (must run after DOM exists)
 document.addEventListener("DOMContentLoaded", () => {
   const burgerBtn = document.getElementById("burgerBtn");
   const navMenu = document.getElementById("navMenu");
   const header = document.querySelector("header");
+
+  // Load pizza menu
+  loadPizzaMenu();
 
   if (burgerBtn && navMenu) {
     const setExpanded = (isOpen) => {

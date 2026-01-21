@@ -1,0 +1,74 @@
+{
+  "pizze": [
+    {
+      "id": 1,
+      "nazov": "Python",
+      "cena": 12.00,
+      "popis": "Nadie_kusky, spenat, mozzarella, pesto",
+      "ingrediencie": "nadie_kusky, spenat, mozzarella, pesto"
+    },
+    {
+      "id": 2,
+      "nazov": "Java",
+      "cena": 14.00,
+      "popis": "BBQ_kava, feferonky, tmavy_syr",
+      "ingrediencie": "BBQ_kava, feferonky, tmavy_syr"
+    },
+    {
+      "id": 3,
+      "nazov": "JavaScript",
+      "cena": 13.00,
+      "popis": "sunka, kukurica, paprika",
+      "ingrediencie": "sunka, kukurica, paprika"
+    },
+    {
+      "id": 4,
+      "nazov": "PHP",
+      "cena": 11.00,
+      "popis": "slanina, cibula, syrovy_bonus",
+      "ingrediencie": "slanina, cibula, syrovy_bonus"
+    },
+    {
+      "id": 5,
+      "nazov": "Laravel",
+      "cena": 15.00,
+      "popis": "tezy_cloveka, kuracie_maso, sampinony",
+      "ingrediencie": "tezy_cloveka, kuracie_maso, sampinony"
+    },
+    {
+      "id": 6,
+      "nazov": "C++",
+      "cena": 16.00,
+      "popis": "salama, slanina, kavy",
+      "ingrediencie": "salama, slanina, kavy"
+    },
+    {
+      "id": 7,
+      "nazov": "HTML & CSS",
+      "cena": 12.00,
+      "popis": "sunka, kukurica, mozzarella",
+      "ingrediencie": "sunka, kukurica, mozzarella"
+    },
+    {
+      "id": 8,
+      "nazov": "SQL",
+      "cena": 13.00,
+      "popis": "tuniak, cibula, kukurica",
+      "ingrediencie": "tuniak, cibula, kukurica"
+    },
+    {
+      "id": 9,
+      "nazov": "React",
+      "cena": 14.00,
+      "popis": "kuracie, brokolica, syrovka",
+      "ingrediencie": "kuracie, brokolica, syrovka"
+    },
+    {
+      "id": 10,
+      "nazov": "Tokoš Formaggi",
+      "cena": 17.00,
+      "popis": "ŠPECIÁL - mozzarella, gorgonzola, parmezán, pecorino",
+      "ingrediencie": "mozzarella, gorgonzola, parmezán, pecorino"
+    }
+  ]
+}
