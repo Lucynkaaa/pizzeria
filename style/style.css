@@ -292,6 +292,9 @@ p {
   margin: 0 0 1.5rem 0;
   font-size: 2rem;
 }
+.menu-special .menu-item {
+  display: flow;
+}
 
 @media (max-width: 768px) {
   #menu .menu-background {
@@ -475,9 +478,8 @@ iframe {
 }
 /* Pizza Menu Cards */
 .pizza-card {
-  padding: 15px;
+  padding: 10px;
   margin: 10px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .pizza-card h3 {
