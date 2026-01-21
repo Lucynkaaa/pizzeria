@@ -4,7 +4,7 @@
       "id": 1,
       "nazov": "Python",
       "cena": 12.0,
-      "popis": "{Hadie_kusky, špenat, mozzarella, pesto}",
+      "popis": "{hadie_kusky, špenat, mozzarella, pesto}",
       "ingrediencie": "hadie_kusky, špenat, mozzarella, pesto"
     },
     {
