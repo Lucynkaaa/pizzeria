@@ -1,4 +1,4 @@
-// Load pizza menu from JSON
+// Load pizza menu from JSO
 async function loadPizzaMenu() {
   try {
     const response = await fetch("pizza-data.json");

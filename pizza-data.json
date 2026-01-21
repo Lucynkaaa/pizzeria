@@ -3,71 +3,71 @@
     {
       "id": 1,
       "nazov": "Python",
-      "cena": 12.00,
-      "popis": "Nadie_kusky, spenat, mozzarella, pesto",
-      "ingrediencie": "nadie_kusky, spenat, mozzarella, pesto"
+      "cena": 12.0,
+      "popis": "{Hadie_kusky, špenat, mozzarella, pesto}",
+      "ingrediencie": "hadie_kusky, špenat, mozzarella, pesto"
     },
     {
       "id": 2,
       "nazov": "Java",
-      "cena": 14.00,
-      "popis": "BBQ_kava, feferonky, tmavy_syr",
+      "cena": 14.0,
+      "popis": "{BBQ_kava, feferonky, tmavy_syr}",
       "ingrediencie": "BBQ_kava, feferonky, tmavy_syr"
     },
     {
       "id": 3,
       "nazov": "JavaScript",
-      "cena": 13.00,
-      "popis": "sunka, kukurica, paprika",
+      "cena": 13.0,
+      "popis": "{šunka, kukurica, paprika}",
       "ingrediencie": "sunka, kukurica, paprika"
     },
     {
       "id": 4,
       "nazov": "PHP",
-      "cena": 11.00,
-      "popis": "slanina, cibula, syrovy_bonus",
+      "cena": 11.0,
+      "popis": "{slanina, cibula, syrovy_bonus}",
       "ingrediencie": "slanina, cibula, syrovy_bonus"
     },
     {
       "id": 5,
       "nazov": "Laravel",
-      "cena": 15.00,
-      "popis": "tezy_cloveka, kuracie_maso, sampinony",
-      "ingrediencie": "tezy_cloveka, kuracie_maso, sampinony"
+      "cena": 15.0,
+      "popis": "{slzy_človeka, kuracie_maso, šampinony}",
+      "ingrediencie": "slzy_človeka, kuracie_maso, šampinony"
     },
     {
       "id": 6,
       "nazov": "C++",
-      "cena": 16.00,
-      "popis": "salama, slanina, kavy",
-      "ingrediencie": "salama, slanina, kavy"
+      "cena": 16.0,
+      "popis": "{salama, slanina, kava}",
+      "ingrediencie": "salama, slanina, kava"
     },
     {
       "id": 7,
       "nazov": "HTML & CSS",
-      "cena": 12.00,
-      "popis": "sunka, kukurica, mozzarella",
-      "ingrediencie": "sunka, kukurica, mozzarella"
+      "cena": 12.0,
+      "popis": "{šunka, kukurica, mozzarella}",
+      "ingrediencie": "šunka, kukurica, mozzarella"
     },
     {
       "id": 8,
       "nazov": "SQL",
-      "cena": 13.00,
-      "popis": "tuniak, cibula, kukurica",
+      "cena": 13.0,
+      "popis": "{tuniak, cibula, kukurica}",
       "ingrediencie": "tuniak, cibula, kukurica"
     },
     {
       "id": 9,
       "nazov": "React",
-      "cena": 14.00,
-      "popis": "kuracie, brokolica, syrovka",
-      "ingrediencie": "kuracie, brokolica, syrovka"
+      "cena": 14.0,
+      "popis": "{kuracie_kusky, brokolica, syrovka}",
+      "ingrediencie": "kuracie_kusky, brokolica, syrovka"
     },
     {
       "id": 10,
       "nazov": "Tokoš Formaggi",
-      "cena": 17.00,
-      "popis": "ŠPECIÁL - mozzarella, gorgonzola, parmezán, pecorino",
+      "cena": 17.0,
+      "popis": "{mozzarella, gorgonzola, parmezán, pecorino}",
       "ingrediencie": "mozzarella, gorgonzola, parmezán, pecorino"
     }
   ]
