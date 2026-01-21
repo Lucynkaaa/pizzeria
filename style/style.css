@@ -283,7 +283,7 @@ p {
 .menu-special {
   width: 100%;
   max-width: 600px;
-  padding: 2rem;
+  padding: 0, 2rem;
   text-align: left;
   margin-top: 2rem;
 }
@@ -477,10 +477,6 @@ iframe {
   display: inline-block;
 }
 /* Pizza Menu Cards */
-.pizza-card {
-  padding: 10px;
-  margin: 10px;
-}
 
 .pizza-card h3 {
   margin-top: 0;
@@ -504,6 +500,5 @@ iframe {
 .menu-items {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 20px;
   margin: 20px 0;
 }
