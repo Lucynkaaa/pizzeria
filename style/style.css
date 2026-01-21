@@ -249,7 +249,6 @@ p {
   justify-content: space-between;
   align-items: flex-start;
   margin-bottom: 1.5rem;
-  gap: 2rem;
 }
 
 .item-name {
