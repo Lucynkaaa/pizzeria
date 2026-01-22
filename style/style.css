@@ -392,6 +392,9 @@ p {
 }
 
 #kontakt .titul {
+  display: inline;
+  text-align: center;
+  padding-left: 5px;
   margin-bottom: 2rem;
 }
 
@@ -402,7 +405,7 @@ p {
 }
 
 .map-container {
-  width: min(1000px, 95%);
+  width: min(1000px, 100%);
 }
 
 iframe {
@@ -498,5 +501,3 @@ iframe {
 .pizza-card .special {
   padding: 2rem;
 }
-
-
