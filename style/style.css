@@ -247,6 +247,9 @@ p {
   align-items: flex-start;
   gap: 1.2rem;
   padding: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  margin: 20px 0;
 }
 
 .item-name {
@@ -497,8 +500,4 @@ iframe {
   padding: 0, 2rem;
 }
 
-.menu-items {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  margin: 20px 0;
-}
+
