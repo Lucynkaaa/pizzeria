@@ -242,9 +242,6 @@ p {
   width: 100%;
   max-width: 600px;
   padding: 0 2rem;
-}
-
-.menu-item {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
